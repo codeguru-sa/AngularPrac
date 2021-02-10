@@ -10,6 +10,7 @@ export class DirectivesComponent implements OnInit {
   serverCreationStatus ='No server was Created';
   serverCreated = false;
   serverName: string ='';
+  servers = ['TestServer', 'testServer2']
 
 
   constructor() {
@@ -23,6 +24,7 @@ export class DirectivesComponent implements OnInit {
 
   onCreateNewServer(){
     this.serverCreated = true;
+    this.servers.push(this.serverName);
     this.serverCreationStatus='server was created and the name is ' + this.serverName;
   }
 

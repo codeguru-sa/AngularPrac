@@ -1,0 +1,12 @@
+<div class="container">
+    <div class="row">
+        <div class="col col-xs-12">
+            <button class="btn btn-primary" (click)="onDetail()">Display_Details</button>
+            <p *ngIf="showSecret">secret Password = Guru</p>
+            <div *ngFor="let logItem of log; let i = index"
+                [ngStyle]="{backgroundColor : i>=4 ? 'Maroon' : 'transperent'}" [ngClass]="{'white-text': i>=4}">
+                {{logItem}}
+            </div>
+        </div>
+    </div>
+</div>
