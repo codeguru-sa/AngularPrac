@@ -1,2 +1,2 @@
-# AngularDay1
+# AngularPractice
  Practice Of Angular11
