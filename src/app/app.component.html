@@ -1,0 +1,17 @@
+<app-nav-bar></app-nav-bar>
+  <br><br>
+
+<app-directives></app-directives>
+<br><br>
+<div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <label>
+          <input type="text" class="form-control" [(ngModel)] = "userName">
+          <br>
+          <button class="btn btn-primary" (click) = "onClickSubmit()" [disabled] = "userName === '' ">Reset Usename</button>
+          <p> {{ userName }} </p>
+        </label>
+      </div>
+    </div>
+</div>
